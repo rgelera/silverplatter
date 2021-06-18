@@ -50,5 +50,5 @@ sausage = Sausage.new
 silver_platter = [fruit, apple, banana, cheese, sausage]
 silver_platter.each do |food|
   puts food.to_s
-  food.eat
+  food.eat if food.respond_to? "eat"
 end
