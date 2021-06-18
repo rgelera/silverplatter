@@ -40,3 +40,15 @@ class Sausage
     "I'm sausage"
   end
 end
+
+fruit = Fruit.new
+apple = Apple.new
+banana = Banana.new
+cheese = Cheese.new
+sausage = Sausage.new
+
+silver_platter = [fruit, apple, banana, cheese, sausage]
+silver_platter.each do |food|
+  puts food.to_s
+  food.eat
+end
